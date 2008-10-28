@@ -1,0 +1,10 @@
+<% form_for @project do |f| %>
+  <p>Project title<br />
+    <%=f.text_field :title %>
+  </p>
+  <p>Project description<br />
+    <%=f.text_area :description %>
+  </p>
+  <%= submit_tag "Create Project"%>
+  
+<% end%>
